@@ -1,0 +1,31 @@
+.navbar-nav{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    color: #202124;
+
+}
+
+.navbar-nav > li{
+    padding-left:20px;
+    padding-right:20px;
+  }
+.bold-big{
+    font-family: 'Hind', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+}
+.regular-small{
+    font-family: 'Hind', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+}
+.m-t-20{
+    margin-top: 20px;
+}
+.right-align{
+    text-align: right !important;
+}
