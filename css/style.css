@@ -55,6 +55,9 @@ a{
 .m-b-0{
     margin-bottom: 0px;
 }
+.m-b-80{
+    margin-bottom: 80px;
+}
 .m-b-120{
     margin-bottom: 120px;
 }
@@ -118,4 +121,98 @@ hr.solid {
     50% { top: -0.2em; }
     70% { top: -0.3em; }
     100% { top: 0; }
+}
+
+.my-text{
+    font-family: Montserrat;
+    margin-bottom: 0px;
+    font-style: bold;
+    font-weight: bold;
+    font-size: 16px;
+    color: #202124;
+    line-height: 24px;
+}
+.my-subtext{
+    font-family: 'Hind', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-style: light;
+    font-weight: 300;
+    font-size: 14px;
+    color: #4D5156;
+    line-height: 24px;
+}
+.feature-row{
+    /* border-style: solid; */
+    margin-top: 40px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+.feature-subrow{
+    /* border-style: solid; */
+    margin-bottom: 30px;
+}
+.feature-col{
+    /* border-style: dotted; */
+    padding-left: 10px;
+    padding-right: 15px;
+    margin-left: 30px;
+}
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.my-img{
+    filter: drop-shadow(10px 5px 20px rgba(0, 0, 0, 0.25));
+}
+.button{
+    background: #8BE274;
+    border: 0px solid #8BE274;
+    box-sizing: border-box;
+    border-radius: 12px;
+    width: 225px;
+    height: 52px;
+}
+.button .btn-text{
+    font-family: Montserrat;
+    font-style: medium;
+    font-weight: medium;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+.hide {
+    display: none;
+}
+.feature-subrow:hover .hide {
+    display: block;
+}
+
+.card {
+    border: 0;
+    width: 300px;
+    height: 300px;
+    transition: 0.3s;
+    border-radius: 12px;
+    /* box-shadow: 0 0 1.5px 0 rgba(0,0,0,0.25); */
+    
+}
+.card:hover {
+    box-shadow: 0 4px 25px 0 rgba(0,0,0,0.25);
+}
+.card .im {
+    padding-top: 10%;
+    padding-left: 16%;
+    padding-right: 16%;
+}
+.my-col{
+    /* border-style: dotted; */
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
