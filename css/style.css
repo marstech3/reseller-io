@@ -216,3 +216,6 @@ hr.solid {
     flex-wrap: wrap;
     align-content: center;
 }
+#feature_tour{
+    display: none;
+}

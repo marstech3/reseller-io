@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&display=swap" rel="stylesheet">
-    <title></title>
+    <title>Reseller Platform</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -93,15 +93,16 @@
           <!-- =========================== -->
           <hr class="solid">
           <!-- ======================== -->
-          <div class="row" id="features">
+          <div id="features">
+          <div class="row">
             <div class="col-xs-12 text-center">
                 <p class="heading m-b-0">Powerful Features</p>
                 <p class="sub-heading">The Reseller Platform comes with tons of features to increase your productivity</p>
             </div>
-        </div>
-        <div class="row justify-content-center feature-row">
+          </div>
+          <div class="row justify-content-center feature-row">
             <div class="col-lg-3 text-end feature-col">
-                <div class="row feature-subrow">
+                <div class="row feature-subrow" id="get_connected">
                     <div class="row-1">
                         <image class="my-icon" width="35" height="35" src="assets/images/teamwork.png" alt="">
                     </div>
@@ -119,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row feature-subrow">
+                <div class="row feature-subrow" id="inventory_management">
                     <div class="row-1">
                         <image class="my-icon" width="35" height="27.97" src="assets/images/box.png" alt="">
                     </div>
@@ -136,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row feature-subrow">
+                <div class="row feature-subrow" id="transactions">
                     <div class="row-1">
                         <image class="my-icon" width="21.94" height="35" src="assets/images/rupee.png" alt="">
                     </div>
@@ -157,13 +158,13 @@
             <div class="col-lg-2 text-center feature-col">
                 <img src="assets/images/Features.png" class="my-img" width="190" height="390" alt="">
                 <div class="row justify-content-center mt-5">
-                    <button class="button" onclick="window.location.href = 'featuretour.html';">
+                    <button class="button" onclick="showFeatureTour()">
                         <p class="btn-text">Feature Tour</p>
-                    </button>
+                    </button> 
                 </div> 
             </div>
             <div class="col-lg-3 text-start feature-col">
-                <div class="row my-row1">
+                <div class="row feature-subrow" id="store">
                     <div class="row-3">
                         <image class="my-icon" width="35" height="25.97" src="assets/images/online-shopping.png" alt="">
                     </div>
@@ -180,7 +181,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row feature-subrow">
+                <div class="row feature-subrow" id="dashboard">
                     <div class="row-3">
                         <image class="my-icon" width="35" height="27.97" src="assets/images/bar-chart.png" alt="">
                     </div>
@@ -197,7 +198,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row feature-subrow">
+                <div class="row feature-subrow" id="orders">
                     <div class="row-3">
                         <image class="my-icon" width="35" height="35" src="assets/images/order.png" alt="">
                     </div>
@@ -215,15 +216,17 @@
                     </div>
                 </div>
             </div>
-        </div> 
+          </div> 
+        </div>
         <!-- ==========feature tour=========== -->
-        <div class="row text-center">
+        <div id="feature_tour">
+          <div class="row text-center">
           <div class="col-xs-12 m-t-80">
               <p class="heading">Pick your role</p>
               <p class="sub-heading">Choose your role to learn more</p>
           </div>
-      </div>
-      <div class="row feature-row">
+        </div>
+        <div class="row feature-row">
           <div class="col-lg-3 box my-col">
               <div class="card">
                   <img class="im" src="assets/images/distributor.JPG" alt="distributor">
@@ -243,6 +246,7 @@
                   </div>
               </div>
           </div>
+        </div>
       </div>
       <!-- ==========================  -->
     </div>
