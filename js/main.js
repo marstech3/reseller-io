@@ -6,12 +6,9 @@ $(document).ready(function() {
         $('#bottom-arrow').fadeIn();
         }
     });
-    function showFeatureTour() {
-        show('feature_tour');
-    }
-    function show(divId) {
-        $("#" + divId).show();
-    }
-    
+    $("#feature_tour_btn").click(function(){
+        $("#features").hide();
+        $("#feature_tour").show();
+      });
 });
 
