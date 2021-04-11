@@ -45,6 +45,9 @@ html {
 .m-t-40{
     margin-top: 40px;
 }
+.m-t-20{
+    margin-top: 20px;;
+}
 .right-align{
     text-align: right !important;
 }
@@ -60,6 +63,10 @@ a{
 }
 .m-b-120{
     margin-bottom: 120px;
+}
+.p-l-40{
+    padding-left: 40px;
+
 }
 hr.solid {
     border-top: 3px solid #bbb;
@@ -197,11 +204,13 @@ hr.solid {
     transition: 0.3s;
     border-radius: 12px;
     /* box-shadow: 0 0 1.5px 0 rgba(0,0,0,0.25); */
-    
 }
+
 .card:hover {
     box-shadow: 0 4px 25px 0 rgba(0,0,0,0.25);
+
 }
+
 .card .im {
     padding-top: 10%;
     padding-left: 16%;
@@ -218,4 +227,96 @@ hr.solid {
 }
 #feature_tour{
     display: none;
+}
+div > p >a {
+    color:#8BE274;
+    
+}
+div>ul>li>a{
+    color:#8BE274;
+}
+
+#card-extra {
+    width: 95% !important;
+    border-radius: 25px;
+    border: 1px solid rgba(0,0,0,0.25) ;
+    margin-bottom: 2em;
+    height: auto;
+}
+
+#card-extra:hover{
+    box-shadow: none;
+}
+
+.pricing{
+    font-size: 0.9rem;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    opacity: unset;   
+    cursor: pointer; 
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+i{
+    padding: 0 0.5em 0 0.5em;
+}
+#card-header_pro-plus{
+    padding: 1em 0 1em 1em;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    color: white;
+    background-color: #B896FF;
+}
+#card-header_free{
+    padding: 1em 0 1em 1em;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    color: white;
+    background-color: #FF9CFB;
+}
+#card-header_lite{
+    padding: 1em 0 1em 1em;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    color: white;
+    background-color: #7BC7FF;
+}
+#card-header_pro{
+    padding: 1em 0 1em 1em;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    color: white;
+    background-color: #B896FF
+    ;
 }
