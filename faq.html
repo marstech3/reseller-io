@@ -61,24 +61,29 @@
         .my-col{
             border-style: solid;
             border-color: green;
+            display: inline-block;
             /* display: flex; */
             /* flex-wrap: wrap; */
             /* justify-content: center; */
             /* align-content: center; */
         }
-        .card{
+        .crdtxt{
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: center; */
+            align-content: center;
+        }
+        .crdtxt1{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
+            align-content: center;
+        }
+        .rect{
             background: greenyellow;
             box-shadow: 0;
             border: none;
             border-radius: 12px;
-        }
-        .rect{
-            background: greenyellow;
-            border: 0px solid greenyellow;
-            border-radius: 12px;
-            margin-top: 35px;
-            width: 10fr;
-            /* justify-content: center; */
         }
         .navbar-nav > li {
             padding-left: 40px;
@@ -136,10 +141,13 @@
         </div>
         
         <div class="row my-row1">
-            <div class="col-5 my-row1">
-                <div class="card">
-                    <div class="card-body">
-                        <p>Q: What is Reseller Platform ?</p>
+            <div class="col-6 my-row1">
+                <div class="rect">
+                    <div class="col-10 my-col">
+                        <p class="crdtxt">Q: What is Reseller Platform ?</p>
+                    </div>
+                    <div class="col-1 my-col justify-content-end">
+                        <p class="">+</p>
                     </div>
                 </div>
             </div>
@@ -152,3 +160,4 @@
     </div>
     <script></script>
 </body>
+</html>
