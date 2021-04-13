@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen" href="css/style.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&display=swap" rel="stylesheet">
+    <title></title>
+    <style>
+        .title {
+            font-family: Montserrat;
+            margin-bottom: 0px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 42px;
+            color: #202124;
+            line-height: 59px;
+            margin-top: 100 !important;
+        }
+        .sub-title {
+            font-family: 'Hind', sans-serif;
+            font-style: light;
+            font-weight: light;
+            font-size: 20px;
+            color: #4D5156;
+            line-height: 25px;
+        }
+        .my-text{
+            font-family: Montserrat;
+            margin-bottom: 0px;
+            font-style: bold;
+            font-weight: bold;
+            font-size: 16px;
+            color: #ffffff;
+            line-height: 24px;
+        }
+        .mt-5 {
+            margin-top: 100 !important;
+        }
+        .my-row{
+            /* border-style: solid; */
+            margin-top: 15px;
+            margin-bottom: 15px;
+            justify-content: center;
+        }
+        .my-row1{
+            /* z-index: 3; */
+            border-style: solid;
+            border-color: red;
+            /* text-align:center;
+            display: flex;
+            align-items: center;
+            justify-content: center; */
+        }
+        .my-select1{
+            /* border-style: solid; */
+            /* border-color: blue; */
+            height: 60px;
+            border-radius: 10px;
+            background-color: #ECFFD7;
+            z-index: 1;
+        }
+        .my-select2{
+            border-style: solid;
+            border-color: blue;
+            height: 60px;
+            border-radius: 10px;
+            z-index: 1;
+        }
+        .my-col1{
+            border-style: solid;
+            border-color: blue;
+            /* padding-left: 90px; */
+            /* padding-right: 50px; */
+            /* text-align:center;
+            display: flex;
+            align-items: center;
+            justify-content: start; */
+        }
+        .my-col{
+            border-style: dotted;
+            padding-left: 10px;
+            padding-right: 10px;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+        }
+        .my-img{
+            filter: drop-shadow(10px 5px 20px rgba(0, 0, 0, 0.25));
+        }
+        .button{
+            background: #8BE274;
+            border: 0px solid #8BE274;
+            box-sizing: border-box;
+            border-radius: 12px;
+            width: 225px;
+            height: 52px;
+        }
+        .button .btn-text{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin: 0 auto;
+        }
+        .card {
+            border: 0;
+            width: 300px;
+            height: 300px;
+            transition: 0.3s;
+            border-radius: 12px;
+            /* box-shadow: 0 0 1.5px 0 rgba(0,0,0,0.25); */
+            
+        }
+        .card:hover {
+            box-shadow: 0 4px 25px 0 rgba(0,0,0,0.25);
+        }
+        .card .im {
+            padding-top: 10%;
+            padding-left: 16%;
+            padding-right: 16%;
+        }
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(18, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+        .item.one {
+            grid-row: 1;
+            grid-column: span 3 / -1;
+            z-index: 2;
+            background-color: #f7cb2a;
+        }
+        .item.two {
+            grid-row-start: 1;
+            grid-column-start: 1;
+            grid-row-end: span 3;
+            background-color: #469c07;
+        }
+
+        .toptitleicons{
+            height: 50px;
+            width: 50px;
+        }
+
+    .greentick {
+        height: 20px;
+        width: 20px;
+    }
+    .redcross {
+        height: 20px;
+        width: 20px;
+    }
+    .infoicon{
+        height: 15px;
+        width: 15px;
+    }
+    .transparent-box1 {
+        position: relative;
+        z-index: 0; /* put .transparent-box1 above .dashed-box */
+        width: 75%;
+        left: 14%;
+        top: 0px;
+        height: 400px;
+        background: rgba(255, 255, 255, 0.5);
+        border: 1px solid #E5E5E5;
+        box-sizing: border-box;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .transparent-box2 {
+        position: relative;
+        z-index: 0; /* put .transparent-box1 above .dashed-box */
+        width: 75%;
+        left: 14%;
+        top: 0px;
+        height: 400px;
+        background: rgba(255, 255, 255, 0.5);
+        border: 1px solid #E5E5E5;
+        box-sizing: border-box;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .transparent-box3 {
+        position: relative;
+        z-index: 0; /* put .transparent-box1 above .dashed-box */
+        width: 75%;
+        left: 14%;
+        top: 0px;
+        height: 400px;
+        background: rgba(255, 255, 255, 0.5);
+        border: 1px solid #E5E5E5;
+        box-sizing: border-box;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .toptitle{
+        height: 130px;
+    }
+    .free{
+        background-color: #FF9CFB;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        position: relative;
+        text-align:center;
+        display: inline;
+        padding-top: 20px;
+        /* align-content: center; */
+        /* justify-items: center; */
+    }
+    .lite{
+        background-color: #7BC7FF;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        text-align:center;
+        display: inline;
+        padding-top: 20px;
+    }
+    .pro{
+        background-color: #B896FF;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        text-align:center;
+        display: inline;
+        padding-top: 20px;
+    }
+    .my-price{
+        font-family: 'Hind', sans-serif;
+        margin-bottom: 0px;
+        font-style: bold;
+        font-weight: bold;
+        font-size: 40px;
+        color: #202124;
+        line-height: 44px;
+    }
+    .my-month{
+        font-family: 'Hind', sans-serif;
+        font-style: lighter;
+        font-weight: lighter;
+        font-size: 18px;
+        color: #4D5156;
+        line-height: 5px;
+    }
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+    .bg {
+        background-image: url("assets/images/footerimage.png");
+        height: 100%; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .contact-form .form-field {
+        position: relative;
+        margin-bottom: 35px;
+    }
+    .contact-form .input-text {
+        display: block;
+        width: 100%;
+        /* height: 36px; */
+        border-width: 0 0 1px 0;
+        border-color: #202124;
+        font-size: 18px;
+        /* line-height: 26px; */
+        font-weight: 400;
+    }
+    .contact-form .input-text:focus {
+        outline: none;
+    }
+    .contact-form .submit-btn {
+        display: inline-block;
+        background-color: #8BE274;
+        color: #fff;
+        font-size: 16px;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 10px;
+        width:160px;
+        height: 40px;
+        cursor: pointer;
+    }
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: whitesmoke;
+    }
+    .footer-text{
+        font-family: 'Hind', sans-serif;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-style: light;
+        font-weight: 300;
+        font-size: 14px;
+        color: #4D5156;
+        line-height: 40px;
+    }
+  
+    </style>
+  </head>
+  <body class="bg">
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-xs-12 mt-5">
+                <p class="title">Contact Us</p>
+                <p class="sub-title">Feel free to contact us, we will get back to you as soon as we can.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center mt-3">
+            <div class="col-lg-3 m-4">
+                <form class="contact-form row">
+                    <div class="form-field col-lg-12">
+                    <input id="name" class="input-text js-input" type="text" placeholder="Name" required>
+                    </div>
+                    <div class="form-field col-lg-12">
+                    <input id="email" class="input-text js-input" type="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="form-field col-lg-12">
+                    <textarea id="message" class="input-text js-input" type="text" placeholder="Tell us all about it" required></textarea>
+                    </div>
+                    <div class="form-field col-lg-12 text-end mt-2">
+                    <input class="submit-btn" type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 d-flex justify-content-center m-4">
+                <div class="col-lg-6">
+                    <p class="my-subtext">Support</p>
+                    <p class="sub-heading">
+                        support@mail.com<br>
+                        +91 7712377123
+                    </p>
+                    <p class="my-subtext">Contact hours</p>
+                    <p class="sub-heading">
+                        Monday - Friday<br>
+                        9am - 5pm<br>
+                        Weekend closed<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer-text text-start">Copyright © 2020-21 resellerplatform.io | All rights reserved.</div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer-text text-end">Website developed and mantained by <a href="https://www.marstech.co.in/"><img src="assets\images\marstechlogo.svg" height="18px" width="80px"></a></img></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src= "js/main.js"></script>
+  </body>
+</html>
