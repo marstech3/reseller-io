@@ -197,7 +197,7 @@ hr.solid {
     display: block;
 }
 
-.card {
+.mycard {
     border: 0;
     width: 300px;
     height: 300px;
@@ -206,16 +206,15 @@ hr.solid {
     /* box-shadow: 0 0 1.5px 0 rgba(0,0,0,0.25); */
 }
 
-.card:hover {
+.mycard:hover {
     box-shadow: 0 4px 25px 0 rgba(0,0,0,0.25);
-
+}
+.im {
+    height: 50%;
+    width: 72%;
+    margin-top: 10%;
 }
 
-.card .im {
-    padding-top: 10%;
-    padding-left: 16%;
-    padding-right: 16%;
-}
 .my-col{
     /* border-style: dotted; */
     padding-left: 10px;
