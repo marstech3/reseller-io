@@ -404,32 +404,16 @@ input:focus{
     outline: none;
 }
 
-.faqHeader {
-    font-size: 27px;
-    margin: 20px;
+#accordion .card .card-link{
+    position: relative;
+    display: block;
 }
-
-.panel-heading [data-toggle="collapse"]:after {
-    font-family: 'Glyphicons Halflings';
-    content: "e072"; /* "play" icon */
-    float: right;
-    color: #F58723;
-    font-size: 18px;
-    line-height: 22px;
-    /* rotate "play" icon from > (right arrow) to down arrow */
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+#accordion .card .card-header{
+    padding-bottom: 20px;
+    background-color:#F5FCED;
 }
-
-.panel-heading [data-toggle="collapse"].collapsed:after {
-    /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-    color: #454444;
+#accordion .card .card-link .fa{
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
