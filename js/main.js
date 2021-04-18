@@ -58,6 +58,23 @@ $(document).ready(function() {
         .find(".card-header .card-link i.fa").removeClass("fa-minus");
         $(this).parents(".card").siblings()
         .find(".card-header .card-link i.fa").addClass("fa-plus");
-    })
+    });
+    $(".infoicon").mouseenter(function (element) {
+      var el = element.target || element.srcElement;
+      var data = el.nextElementSibling.innerText;
+      var newWidth = data.length * 4.2;
+      var newMargin = -newWidth / 2;
+      $(".tooltiptext")
+        .css({
+          width: "" + newWidth + "px",
+          "margin-left": "" + newMargin + "px",
+        })
+        .stop()
+        .fadeIn("fast");
+    });
+
+    $(".infoicon").mouseleave(function () {
+      $(".tooltiptext").fadeOut("fast");
+    });
 });
 
