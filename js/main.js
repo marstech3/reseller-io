@@ -46,7 +46,7 @@ $(document).ready(function() {
         $(".div2, .div3, .div4, .div1").hide();
         $(".div5").show();
     });
-    $("#accordion .card .card-link").click(function(){
+    $(".accordion .card .card-link").click(function(){
         if($(this).find("i.fa").hasClass("fa-minus")){
 
             $(this).find("i.fa").removeClass("fa-minus");

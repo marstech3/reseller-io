@@ -403,17 +403,17 @@ input:focus{
     outline: none;
 }
 
-#accordion .card .card-link{
+.accordion .card .card-link{
     position: relative;
     display: block;
     text-decoration: none;
     text-align: left;
 }
-#accordion .card .card-header{
+.accordion .card .card-header{
     padding-bottom: 20px;
     background-color:#F5FCED;
 }
-#accordion .card .card-link .fa{
+.accordion .card .card-link .fa{
     position: absolute;
     top: 5px;
     right: 5px;
