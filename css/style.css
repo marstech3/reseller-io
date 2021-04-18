@@ -538,7 +538,12 @@ i {
     opacity: 0.7;
 }
 
-.nav-clicked {
+.nav-clicked { 
+  opacity: 1;
+}
+
+.active {
+
     opacity: 1;
 }
 
@@ -564,6 +569,8 @@ input:focus {
 #accordion .card .card-link {
     position: relative;
     display: block;
+    text-decoration: none;
+    text-align: left;
 }
 
 #accordion .card .card-header {
@@ -576,7 +583,6 @@ input:focus {
     top: 5px;
     right: 5px;
 }
-
 .title {
     font-family: Montserrat;
     margin-bottom: 0px;
@@ -944,4 +950,8 @@ input:focus {
     width: 28%; */
         display: none;
     }
+}
+  
+#footer{
+    text-align: -webkit-center;
 }
