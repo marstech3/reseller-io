@@ -1,13 +1,20 @@
 html {
     scroll-behavior: smooth;
 }
-.navbar-nav{
-    font-family: Montserrat;
+
+.font-open-sans{
+    font-family: Open Sans;
     font-style: normal;
+}
+
+.font-roboto{
+    font-family: Roboto;
+    font-style: normal;  
+}
+.navbar-nav{
     font-weight: 300;
     font-size: 18px;
     color: #202124;
-
 }
 .navbar-nav > li{
     padding-left:20px;
@@ -24,16 +31,24 @@ html {
     right: 0;
   }
 .bold-big{
-    font-family: 'Hind', sans-serif;
-    font-style: normal;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 3rem;
 }
 .regular-small{
-    font-family: 'Hind', sans-serif;
-    font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 480px) {
+    .bold-big{
+        font-size: 2rem;
+    }
+    .regular-small{
+        font-size: 0.9rem;
+    }
+    #panel1 > div {
+        margin-left: -2rem;
+    }
 }
 .m-t-150{
     margin-top: 150px;
@@ -42,7 +57,7 @@ html {
     margin-top: 80px;
 }
 .m-t-40{
-    margin-top: 40px;
+    margin-top: 1em;
 }
 .m-t-20{
     margin-top: 20px;;
@@ -149,17 +164,14 @@ hr.solid {
     line-height: 24px;
 }
 .feature-row{
-    /* border-style: solid; */
-    margin-top: 40px;
+    margin-top: 1em;
     margin-bottom: 15px;
     justify-content: center;
 }
 .feature-subrow{
-    /* border-style: solid; */
     margin-bottom: 30px;
 }
 .feature-col{
-    /* border-style: dotted; */
     padding-left: 10px;
     padding-right: 15px;
     margin-left: 30px;
@@ -234,20 +246,24 @@ div>ul>li>a{
     color:#8BE274;
 }
 
-#card-extra {
-    width: 95% !important;
+.card-extra {
     border-radius: 25px;
     border: 1px solid rgba(0,0,0,0.25) ;
     margin-bottom: 2em;
     height: auto;
 }
 
-#card-extra:hover{
+.card-extra:hover{
     box-shadow: none;
 }
 
 .pricing{
     font-size: 0.9rem;
+}
+@media screen and (max-width: 480px){
+   .pricing{
+        padding: 1em !important;
+    }
 }
 .tooltip {
     position: relative;
@@ -318,8 +334,6 @@ i{
     background-color: #B896FF
     ;
 }
-
-
 .mt-5 {
     margin-top: 100 !important;
 }
@@ -419,13 +433,22 @@ input:focus{
     right: 5px;
 }
 #faq-footer{
-    margin-left: 200px; 
+    padding-left: 200px; 
      
 }
 @media screen and (max-width:761px) {
     #faq-footer{
-        margin-left: 10px;  
+        padding-left: 10px;  
     }  
+    #online_orders{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #pricing_panel_content
+    .col:nth-of-type(2),
+    .col:nth-of-type(3) {
+        min-width: -webkit-fill-available;    
+    }
 }
 .bg {
     background-image: url("/assets/images/footerimage.png");
@@ -471,19 +494,26 @@ footer {
     background-color: whitesmoke;
 }
 .footer-text{
-    font-family: 'Hind', sans-serif;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-style: light;
-    font-weight: 300;
     font-size: 14px;
     color: #4D5156;
-    line-height: 40px;
+    line-height: 3rem;
+}
+@media only screen and (max-device-width : 630px) {
+    .footer-text {
+    width: 75%;
+    position: relative;
+    }
+}
+@media only screen and (max-device-width : 630px) {
+    #bulk_import {
+    margin-top: 0 !important;
+    }
 }
 
 .download-section {
     display: flex;
     align-items: center;
+    float: right;
 }
 
 .ios-download-link {

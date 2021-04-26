@@ -10,6 +10,7 @@ $(document).ready(function() {
         $(".tab").removeClass("active");
         $(this).addClass("active");
     });
+
     $("#feature_tour_btn").click(function(){
         $("#features").hide();
         $("#distributor_features").hide();
