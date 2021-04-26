@@ -4,12 +4,10 @@ html {
 
 .font-open-sans{
     font-family: Open Sans;
-    font-style: normal;
 }
 
 .font-roboto{
     font-family: Roboto;
-    font-style: normal;  
 }
 .navbar-nav{
     font-weight: 300;
@@ -82,20 +80,13 @@ a{
     padding-left: 40px;
 
 }
-hr.solid {
-    border-top: 3px solid #bbb;
-}
 .heading{
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: normal;
     font-size: 48px;
     line-height: 59px;
     color: #202124;
 }
 .sub-heading{
-    font-family: Hind;
-    font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 38px;
@@ -145,7 +136,6 @@ hr.solid {
 }
 
 .my-text{
-    font-family: Montserrat;
     margin-bottom: 0px;
     font-style: bold;
     font-weight: bold;
@@ -154,7 +144,6 @@ hr.solid {
     line-height: 24px;
 }
 .my-subtext{
-    font-family: 'Hind', sans-serif;
     margin-top: 0px;
     margin-bottom: 0px;
     font-style: light;
@@ -185,15 +174,14 @@ hr.solid {
     filter: drop-shadow(10px 5px 20px rgba(0, 0, 0, 0.25));
 }
 .button{
-    background: #8BE274;
-    border: 0px solid #8BE274;
+    background: #1DCFE3;
+    border: 0px solid #1DCFE3;
     box-sizing: border-box;
     border-radius: 12px;
     width: 200px;
     height: 40px;
 }
 .button .btn-text{
-    font-family: Montserrat;
     font-style: medium;
     font-weight: medium;
     font-size: 16px;
@@ -216,7 +204,9 @@ hr.solid {
     border-radius: 12px;
     /* box-shadow: 0 0 1.5px 0 rgba(0,0,0,0.25); */
 }
-
+.card-subtitle{
+    font-size: 0.9rem;
+}
 .mycard:hover {
     box-shadow: 0 4px 25px 0 rgba(0,0,0,0.25);
 }
@@ -239,11 +229,11 @@ hr.solid {
     display: none;
 }
 div > p >a {
-    color:#8BE274;
+    color:#1DCFE3;
     
 }
 div>ul>li>a{
-    color:#8BE274;
+    color:#1DCFE3;
 }
 
 .card-extra {
@@ -309,30 +299,25 @@ i{
     padding: 1em 0 1em 1em;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
-    color: white;
-    background-color: #B896FF;
+    color: black;
 }
 #card-header_free{
     padding: 1em 0 1em 1em;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
-    color: white;
-    background-color: #FF9CFB;
+    color: black;
 }
 #card-header_lite{
     padding: 1em 0 1em 1em;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
-    color: white;
-    background-color: #7BC7FF;
+    color: black;
 }
 #card-header_pro{
     padding: 1em 0 1em 1em;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
-    color: white;
-    background-color: #B896FF
-    ;
+    color: black;
 }
 .mt-5 {
     margin-top: 100 !important;
@@ -388,8 +373,8 @@ i{
     filter: drop-shadow(10px 5px 20px rgba(0, 0, 0, 0.25));
 }
 .rect{
-    background: #8BE274;
-    border: 0px solid #8BE274;
+    background: #1DCFE3;
+    border: 0px solid #1DCFE3;
     box-sizing: border-box;
     border-radius: 12px;
     width: 450px;
@@ -425,7 +410,7 @@ input:focus{
 }
 .accordion .card .card-header{
     padding-bottom: 20px;
-    background-color:#F5FCED;
+    background-color:#EAFAFC;
 }
 .accordion .card .card-link .fa{
     position: absolute;
