@@ -1,3 +1,7 @@
+/* *{
+    border: 1px solid #f00 !important;
+} */
+
 html {
     scroll-behavior: smooth;
 }
@@ -178,8 +182,8 @@ a{
     border: 0px solid #1DCFE3;
     box-sizing: border-box;
     border-radius: 12px;
-    width: 200px;
-    height: 40px;
+    width: 12rem;
+    height: 2.7rem;
 }
 .button .btn-text{
     font-style: medium;
@@ -472,7 +476,6 @@ input:focus{
     cursor: pointer;
 }
 footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -487,6 +490,16 @@ footer {
     .footer-text {
     width: 75%;
     position: relative;
+    }
+}
+@media only screen and (max-device-width : 630px) {
+    .feature-col {
+        text-align-last: center;
+        margin-left: 0;
+
+    }
+    #feature_tour_btn{
+        margin-bottom: 3em;
     }
 }
 @media only screen and (max-device-width : 630px) {
