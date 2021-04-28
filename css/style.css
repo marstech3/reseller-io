@@ -48,9 +48,10 @@ html {
     .regular-small{
         font-size: 0.9rem;
     }
-    #panel1 > div {
+    #panel1 div:first-of-type{
         margin-left: -2rem;
     }
+
 }
 .m-t-150{
     margin-top: 150px;
@@ -450,6 +451,12 @@ input:focus{
     position: relative;
     margin-bottom: 35px;
 }
+
+.form-field:last-child {
+    text-align-last: center;
+}
+
+
 .contact-form .input-text {
     display: block;
     width: 100%;
