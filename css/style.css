@@ -494,7 +494,7 @@ footer {
 }
 @media only screen and (max-device-width : 630px) {
     .feature-col {
-        text-align-last: center;
+        text-align-last: center !important;
         margin-left: 0;
 
     }
