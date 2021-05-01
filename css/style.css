@@ -13,6 +13,10 @@ html {
 .font-roboto{
     font-family: Roboto;
 }
+.navbar{
+    background: white;
+
+}
 .navbar-nav{
     font-weight: 300;
     font-size: 18px;
@@ -507,6 +511,11 @@ footer {
     }
     #feature_tour_btn{
         margin-bottom: 3em;
+    }
+}
+@media only screen and (max-device-width : 630px) {
+    #bulk_import {
+    margin-top: 0 !important;
     }
 }
 @media only screen and (max-device-width : 630px) {
