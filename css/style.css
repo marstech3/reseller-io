@@ -183,8 +183,8 @@ a{
     filter: drop-shadow(10px 5px 20px rgba(0, 0, 0, 0.25));
 }
 .button{
-    background: #1DCFE3;
-    border: 0px solid #1DCFE3;
+    background: #3ABEF0;
+    border: 0px solid #3ABEF0;
     box-sizing: border-box;
     border-radius: 12px;
     width: 12rem;
@@ -238,11 +238,11 @@ a{
     display: none;
 }
 div > p >a {
-    color:#1DCFE3;
+    color:#3ABEF0;
     
 }
 div>ul>li>a{
-    color:#1DCFE3;
+    color:#3ABEF0;
 }
 
 .card-extra {
@@ -382,8 +382,8 @@ i{
     filter: drop-shadow(10px 5px 20px rgba(0, 0, 0, 0.25));
 }
 .rect{
-    background: #1DCFE3;
-    border: 0px solid #1DCFE3;
+    background: #3ABEF0;
+    border: 0px solid #3ABEF0;
     box-sizing: border-box;
     border-radius: 12px;
     width: 450px;
@@ -545,5 +545,6 @@ footer {
     height: 40px;
     background-color: #ccc;
 }
-  
+
+
 
