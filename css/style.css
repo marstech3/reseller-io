@@ -93,12 +93,14 @@ a{
     font-weight: normal;
     font-size: 48px;
     line-height: 59px;
+    line-height: 65px;
     color: #202124;
 }
 .sub-heading{
     font-weight: 300;
     font-size: 20px;
     line-height: 38px;
+    line-height: 28px;
     color: #4D5156;
 }
 #bottom-arrow{
@@ -546,5 +548,17 @@ footer {
     background-color: #ccc;
 }
 
+.readmore {
+    color: #3ABEF0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 21px;
+}
+
+.feature-subrow:hover .readmore{
+    display: none;
+}
 
 
