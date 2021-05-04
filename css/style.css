@@ -36,6 +36,15 @@ html {
     position: absolute;
     right: 0;
   }
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.55);
+    border-color: rgba(0, 0, 0, 0);
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0px;
+}
 .bold-big{
     font-weight: 600;
     font-size: 3rem;
