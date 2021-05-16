@@ -17,6 +17,9 @@ html {
     background: white;
 
 }
+.left{
+    margin-left: -2em;
+}
 .navbar-nav{
     font-weight: 300;
     font-size: 18px;
@@ -64,6 +67,20 @@ html {
     #panel1 div:first-of-type{
         margin-left: -2rem;
     }
+
+}
+#hash {
+    display: flex;
+    justify-content: space-between;
+  }
+@media screen and (max-width: 480px) {
+    .foot{
+        display: none;
+    }
+    #hash {
+        display: flex;
+        justify-content: space-between;
+      }
 
 }
 .m-t-150{
