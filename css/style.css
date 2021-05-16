@@ -81,6 +81,19 @@ html {
   .foot {
     display: none;
   }
+  #distributor_features > div:nth-child(7){
+    padding: 0 1em 0 1em;
+  }
+  #reseller_features > div:nth-child(7){
+    padding: 0 1em 0 1em;
+  }
+  .my-col> .my-subtext{
+      margin-top: 30px;
+  }
+  .my-col> .title1{
+      margin-top: 0;
+      margin-bottom: 20px;
+  }
   #hash {
     display: flex;
     justify-content: space-between;
@@ -355,11 +368,22 @@ div > ul > li > a {
     padding: 1em !important;
   }
 }
+@media screen and (max-width: 480px) {
+  .mycard {
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.25);  }
+}
+
 @media screen and (max-width: 480px){
    .left{
        margin-left: 1em;
     }
 }
+@media screen and (max-width: 480px){
+   .feature-row > .my-col > img:first-child{
+        display: none;
+    }
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
@@ -534,6 +558,8 @@ input:focus {
 #faq-footer {
   padding-left: 200px;
 }
+
+
 @media screen and (max-width: 761px) {
   #faq-footer {
     padding-left: 10px;
@@ -603,6 +629,13 @@ footer {
   .footer-text {
     width: 75%;
     position: relative;
+  }
+}
+@media only screen and (max-device-width: 630px) {
+  #feature_tour  .mycard{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 1em;
   }
 }
 @media only screen and (max-device-width: 630px) {
