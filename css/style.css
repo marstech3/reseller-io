@@ -209,6 +209,22 @@ a{
     color: #FFFFFF;
     margin: 0 auto;
 }
+
+input[type=submit]{
+    background: #3ABEF0;
+    border: 0px solid #3ABEF0;
+    box-sizing: border-box;
+    border-radius: 12px;
+    width: 12rem;
+    height: 2.7rem;
+    font-style: medium;
+    font-weight: medium;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
 .hide {
     display: none;
 }
@@ -360,7 +376,7 @@ i{
     align-items: space-between;
 }
 .title {
-    font-family: Montserrat;
+    font-family: Open Sans;
     margin-bottom: 0px;
     font-style: normal;
     font-weight: normal;
@@ -370,7 +386,7 @@ i{
     margin-top: 100 !important;
 }
 .title1 {
-    font-family: Montserrat;
+    font-family: Open Sans;
     margin-top: 10px;
     margin-bottom: 10px;
     font-style: normal;
@@ -381,7 +397,7 @@ i{
     margin-top: 100 !important;
 }
 .sub-title {
-    font-family: 'Hind', sans-serif;
+    font-family: Roboto;
     font-style: light;
     font-weight: light;
     font-size: 20px;

@@ -41,9 +41,9 @@
               <li class="nav-item">
                 <a class="nav-link tab" href="#features">Features</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link tab" href="#pricing_panel">Pricing</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link tab" href="#faq">FAQ</a>
               </li>
@@ -97,7 +97,7 @@
           <div class ="row" id="how_it_works">
             <div class="col-xs-12 text-center m-t-80">
                 <span class="heading font-open-sans">How It Works</span><br>
-                <span class="sub-heading font-roboto font-roboto">Dont scrach your head ! Reseller Platform follows B to B to C model. Here’s an overview</span>
+                <span class="sub-heading font-roboto">Dont scrach your head ! Reseller Platform follows B to B to C model. Here’s an overview</span>
             </div>
           </div>
           <div class="row m-t-40">
@@ -287,8 +287,14 @@
       </div>
       <!-- =============distributor feature page================= -->
       <div id="distributor_features" class="m-t-80">
+        <div class="row text-center">
+          <div class="col-xs-12 m-t-80">
+              <p class="heading font-open-sans">Distributor Features</p>
+              <p class="sub-heading font-roboto">Tap on the buttons in bottom Nav to explore more</p>
+          </div>
+        </div>
         <div class="div1">
-          <div class="row my-row1 justify-content-center">
+          <div class="row my-row1 justify-content-center mt-3">
               <div class="col-lg-3 my-col">
                   <p class="title1 text-center">Distributor Home</p>
               </div>
@@ -395,8 +401,8 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-5 justify-content-center mb-40">
-          <div class="row rect my-row2">
+        <div class="row mt-3 justify-content-center mb-40">
+          <div class="rect my-row2">
               <div class="col-2 my-col btn-1 ">
                   <input class="nav-img active tab" type="image" src="assets/images/sn_home.png" width="24" height="24" alt="">
                 </div>
@@ -413,12 +419,19 @@
                   <input class="nav-img tab" type="image" src="assets/images/sn_dashboard.png" width="24" height="24" alt="">
               </div>
           </div>
-      </div>
+          <div class="px-5"><p class="d-sm-none d-lg-block font-roboto text-end"><a href="#features">End Tour?</a></p></div>
+        </div>
       </div>
       <!-- =================reseller feature page===================== -->
       <div id="reseller_features" class="m-t-80">
+        <div class="row text-center">
+          <div class="col-xs-12 m-t-80">
+              <p class="heading font-open-sans">Reseller Features</p>
+              <p class="sub-heading font-roboto">Tap on the buttons in bottom Nav to explore more</p>
+          </div>
+        </div>
         <div class="div1">
-          <div class="row my-row1 justify-content-center">
+          <div class="row my-row1 justify-content-center mt-3">
               <div class="col-lg-3 my-col">
                   <p class="title1 text-center">Reseller Home</p>
               </div>
@@ -567,6 +580,7 @@
                   <input class="nav-img btn-5 tab" type="image" src="assets/images/sn_dashboard.png" width="24" height="24" alt="">
               </div>
           </div>
+          <div class="px-5"><p class="d-sm-none d-lg-block font-roboto text-end"><a href="#features">End Tour?</a></p></div>
       </div>
       </div>
       <!-- ============bulk import==============  -->
@@ -798,7 +812,7 @@
                 <div class="card mx-auto col-lg-7 border-0 m-t-40">
                   <div class="card-header">
                     <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                      Q: What is the Reseller Platform?
+                      Q: What is The Reseller Platform?
                       <i class="fa fa-minus"></i>
                     </a>
                   </div>
@@ -823,7 +837,7 @@
                   </a>
                   </div>
                   <div id="collapseTwo" class="collapse" data-parent=".accordion">
-                    <div class="card-body">
+                    <div class="card-body font-roboto">
                       Whether you are a Wholeseller, Distributor or Manufacturer looking to  expand your reach
                       to more Retailers. Or even if you are a Retailer wanting to connect with more wholesellers
                       to buy products for your shop, Reseller Platform is the one thing you need.                    </div>
@@ -866,19 +880,24 @@
             <form id="contact-form" class="contact-form row">
               <input type="hidden" name="contact_number">  
               <div class="form-field col-lg-12">
-                <input id="name" name="from_name" class="input-text js-input" type="text" placeholder="Name" required>
+                <input id="name" name="from_name" class="input-text js-input font-roboto" type="text" placeholder="Name" required>
                 </div>
                 <div class="form-field col-lg-12">
-                <input id="email" name="from_email" class="input-text js-input" type="email" placeholder="E-mail" required>
+                <input id="email" name="from_email" class="input-text js-input font-roboto" type="email" placeholder="E-mail" required>
                 </div>
                 <div class="form-field col-lg-12">
-                <textarea id="message" name="message" class="input-text js-input" type="text" placeholder="Tell us all about it" required></textarea>
+                <textarea id="message" name="message" class="input-text js-input font-roboto" type="text" placeholder="Tell us all about it" required></textarea>
                 </div>
                 <div class="form-field col-lg-12 text-end mt-2">
                 <input type="submit" class="button" value="Send">
                     <!-- <button type="submit" class="button">
                       <p class="btn-text font-open-sans">Send</p>
                 </button>  -->
+
+                <!-- <button class="button" id="feature_tour_btn">
+                  <p class="btn-text font-open-sans">Feature Tour</p>
+              </button>  -->
+
                 </div>
             </form>
         </div>
