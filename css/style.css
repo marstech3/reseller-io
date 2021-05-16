@@ -292,6 +292,11 @@ div>ul>li>a{
         padding: 1em !important;
     }
 }
+@media screen and (max-width: 480px){
+   .left{
+       margin-left: 1em;
+    }
+}
 .tooltip {
     position: relative;
     display: inline-block;
